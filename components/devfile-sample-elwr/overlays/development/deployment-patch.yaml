@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-elwr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0017-tenant/tkwch-fix-0075-0017-app/devfile-sample-elwr@sha256:c8a02cb83cbdd828bedd86b807d7f954427fd37c22840005b6f9091f5ff85cdb
+        name: my-nodejs
+        resources: {}
+status: {}
